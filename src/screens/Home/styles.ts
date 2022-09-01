@@ -16,7 +16,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 400px) {
+    @media (max-width: 650px) {
       flex-direction: column;
       align-items: center;
       justify-content: center;
