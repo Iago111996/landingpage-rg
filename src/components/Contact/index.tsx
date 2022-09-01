@@ -18,13 +18,21 @@ export function Contact() {
 
     emailjs
       .sendForm(
-        "service_enm05sn",
-        "template_q44aj8n",
+        "service_dnquz8a",
+        "template_23hgkjs",
         e.target as HTMLFormElement,
-        "R77o26dEcJGonbptr"
+        "SmMkdfKqcJx9p4NEC"
       )
       .then((res) => {
         alert("El email fue enviado!");
+        // @ts-ignore: Unreachable code error
+        e.target[0].value = "";
+        // @ts-ignore: Unreachable code error
+        e.target[1].value = "";
+        // @ts-ignore: Unreachable code error
+        e.target[2].value = "";
+        // @ts-ignore: Unreachable code error
+        e.target[3].value = "";
       })
       .catch((error) => alert("su email no pudo ser enviado!"));
   }
@@ -58,12 +66,12 @@ export function Contact() {
             </h2>
             <h2>
               <FiMail size={16} style={{ marginRight: 8}} />
-              carpiteriasahiren@gmail.com
+              reparacionesyreformas@gmail.com
             </h2>
           </Left>
 
           <Rigth>
-            <img src="./assets/map.png" alt="imagene de mapa." />
+            <img src="./assets/map.png" alt="Imagene de mapa." />
           </Rigth>
         </Wrapper>
       </Container>

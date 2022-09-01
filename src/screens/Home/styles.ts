@@ -23,7 +23,7 @@ export const Container = styled.div`
     }
 
     img {
-      width: 240px;
+      width: 260px;
       height: 80px;
     }
   }
